@@ -1,0 +1,11 @@
+{
+  "appId": "com.marinailin.prime",
+  "appName": "prime",
+  "bundledWebRuntime": true,
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

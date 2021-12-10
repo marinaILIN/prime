@@ -1,0 +1,64 @@
+.card 
+    .card_head 
+        a(onClick="back()").card_head-ss
+            img(src="./images/icons/black/arrow.webp") 
+        .card_head-name
+            span Porsche Taycan
+    .card_gallery 
+        <div class="glide" id="tay">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides" id="autogall">
+                    <div class="glide__slide">
+                        img(src="images/cards/porsche/taycan/img1.webp")
+                    </div>
+                    <div class="glide__slide">
+                        img(src="images/cards/porsche/taycan/img2.webp")
+                    </div>
+                    <div class="glide__slide">
+                        img(src="images/cards/porsche/taycan/img3.webp")
+                    </div>
+                    <div class="glide__slide">
+                        img(src="images/cards/porsche/taycan/img4.webp")
+                    </div>
+                    <div class="glide__slide">
+                        img(src="images/cards/porsche/taycan/img5.webp")
+                    </div>
+                    <div class="glide__slide">
+                        img(src="images/cards/porsche/taycan/img6.webp")
+                    </div>
+                    <div class="glide__slide">
+                        img(src="images/cards/porsche/taycan/img7.webp")
+                    </div>
+                </div>
+            </div>
+        </div> 
+    
+    .card_switch
+        span(id="Tab") 
+        a(id="sw1" onClick = "sw1Active()") Показатели
+        a(id="sw2" onClick = "sw2Active()") Тарифы
+    .card_info 
+        .card_info-text 
+            p Дебют полностью электрического Porsche Taycan прошел в начале сентября 2019 года. Новинка получила разработанную нуля платформу с низким центром тяжести и продвинутой подвеской, инновационную силовую установку с уникальными параметрами, ощутимо ускоряющими процесс зарядки, а также необычный салон. Разгон до сотни занимает 2,8 с, максимальная скорость — 260 км/ч.
+        a.button(id="mobbut" onClick="open_popup()") Прокатиться
+        .card_info-attributes
+            p
+                img.card_info-attributes_img(src="images/icons/black/speed.webp") 
+                span.banner-info_speed 260 км/ч
+            p
+                img.card_info-attributes_img(src="images/icons/black/power.webp")  
+                span.banner-info_power 625 л.с.
+            p
+                img.card_info-attributes_img(src="images/icons/black/time.webp") 
+                span.banner-info_time 2.8 с.
+        .card_info-price 
+            p 
+                img.card_info-price_img(src="images/icons/black/1h.webp")
+                span.banner-info_power 4500 ₽ 
+            p 
+                img.card_info-price_img(src="images/icons/black/24h.webp") 
+                span.banner-info_power 105 тыс. ₽   
+    a.button(id="descbut" onClick="open_popup()") Прокатиться
+
+    <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script> var tay = { type: "carousel", focusAt: 'center', gap: 0, autoplay: 2000, hoverpause: false, perView: 1.5}; new Glide('#tay',tay).mount();</script>

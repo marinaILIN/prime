@@ -1,0 +1,38 @@
+
+<div class="card"> 
+  <div class="card_head"> <a class="card_head-ss" onClick="back()"><img src="./images/icons/black/arrow.webp"/></a>
+    <div class="card_head-name"><span>Sunseeker 70 Manhattan</span></div>
+  </div>
+  <div class="card_gallery">
+     <div class="glide" id="man">
+<div class="glide__track" data-glide-el="track">
+<div class="glide__slides" id="autogall">
+<div class="glide__slide"><img src="images/cards/sunseeker/70manhattan/img1.webp"/></div>
+<div class="glide__slide"><img src="images/cards/sunseeker/70manhattan/img2.webp"/></div>
+<div class="glide__slide"><img src="images/cards/sunseeker/70manhattan/img3.webp"/></div>
+<div class="glide__slide"><img src="images/cards/sunseeker/70manhattan/img4.webp"/></div>
+</div>
+</div>
+</div> 
+  </div>
+  <div class="card_switch"><span id="Tab"> </span><a id="sw1" onClick="sw1Active()">Показатели</a><a id="sw2" onClick="sw2Active()">Тарифы</a></div>
+  <div class="card_info"> 
+    <div class="card_info-text"> 
+      <p>Это английская яхта бесспорно относится к классу люкс, она впервые в чартерах и подойдет даже самым требовательным гостям.</p>
+      <p>Моторная яхта Sunseeker 70 Manhattan — идеальное судно как для семейного торжества или прогулки по Неве, так и  путешествия на Валаам или в Кронштадт. </p>
+      <p>Актуальный дизайн: стильный современный экстерьер в сочетании с просторными интерьерными решениями. Роскошный салон, полноценный обеденный стол и оборудованная кухня, просторные гостевые каюты- это далеко не все преимущества.  </p>
+    </div><a class="button" id="mobbut" onClick="open_popup()">Прокатиться</a>
+    <div class="card_info-attributes">
+      <p><img class="card_info-attributes_img" src="images/icons/black/people.webp"/><span class="banner-info_speed">14 чел.</span></p>
+      <p><img class="card_info-attributes_img" src="images/icons/black/line.webp"/><span class="banner-info_power">22.5 м</span></p>
+      <p><img class="card_info-attributes_img" src="images/icons/black/bed.webp"/><span class="banner-info_time">6 мест</span></p>
+      <div class="card_info-attributes_mini"><img src="images/icons/black/shower.webp"/><img src="images/icons/black/toilet.webp"/><img src="images/icons/black/microwave.webp"/></div>
+      <div class="card_info-attributes_mini"><img src="images/icons/black/froze.webp"/><img src="images/icons/black/film.webp"/><img src="images/icons/black/music.webp"/></div>
+    </div>
+    <div class="card_info-price"> 
+      <p> <img class="card_info-price_img" src="images/icons/black/1h.webp"/><span class="banner-info_power">5000 ₽ </span></p>
+      <p> <img class="card_info-price_img" src="images/icons/black/24h.webp"/><span class="banner-info_power">120 тыс. ₽ </span></p>
+    </div>
+  </div><a class="button" id="descbut" onClick="open_popup()">Прокатиться</a><script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script> var man = { type: "carousel", focusAt: 'center', gap: 0, autoplay: 2000, hoverpause: false, perView: 1.5}; new Glide('#man',man).mount();</script>
+</div>

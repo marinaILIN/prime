@@ -1,0 +1,33 @@
+
+<div class="card"> 
+  <div class="card_head"> <a class="card_head-ss" onClick="back()"><img src="./images/icons/black/arrow.webp"/></a>
+    <div class="card_head-name"><span>Jaguar XJ</span></div>
+  </div>
+  <div class="card_gallery">
+     <div class="glide" id="xj">
+<div class="glide__track" data-glide-el="track">
+<div class="glide__slides" id="autogall">
+<div class="glide__slide"><img src="images/cards/jaguar/xj/img3.webp"/></div>
+<div class="glide__slide"><img src="images/cards/jaguar/xj/img1.webp"/></div>
+<div class="glide__slide"><img src="images/cards/jaguar/xj/img2.webp"/></div>
+</div>
+</div>
+</div> 
+  </div>
+  <div class="card_switch"><span id="Tab">                                 </span><a id="sw1" onClick="sw1Active()">Показатели</a><a id="sw2" onClick="sw2Active()">Тарифы</a></div>
+  <div class="card_info"> 
+    <div class="card_info-text"> 
+      <p>XJ со стандартной колесной базой (SWB) необычайно универсален и способен превзойти запросы самого взыскательного владельца. Представительская версия с удлиненной базой (LWB) воплощает эталонный уровень изысканной роскоши. К услугам пассажиров второго ряда более метра пространства для ног и уникальные настройки пневмоподвески «лимузин» для непревзойденного комфорта. Разгон до сотни занимает 6.4 с, максимальная скорость — 250 км/ч.</p>
+    </div><a class="button" id="mobbut" onClick="open_popup()">Прокатиться</a>
+    <div class="card_info-attributes">
+      <p><img class="card_info-attributes_img" src="images/icons/black/speed.webp"/><span class="banner-info_speed">250 км/ч</span></p>
+      <p><img class="card_info-attributes_img" src="images/icons/black/power.webp"/><span class="banner-info_power">340 л.с.</span></p>
+      <p><img class="card_info-attributes_img" src="images/icons/black/time.webp"/><span class="banner-info_time">6.4 с.</span></p>
+    </div>
+    <div class="card_info-price"> 
+      <p> <img class="card_info-price_img" src="images/icons/black/1h.webp"/><span class="banner-info_power">3500 ₽ </span></p>
+      <p> <img class="card_info-price_img" src="images/icons/black/24h.webp"/><span class="banner-info_power">75 тыс. ₽   </span></p>
+    </div>
+  </div><a class="button" id="descbut" onClick="open_popup()">Прокатиться</a><script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script> var xj = { type: "carousel", focusAt: 'center', gap: 0, autoplay: 2000, hoverpause: false, perView: 1.5}; new Glide('#xj',xj).mount();</script>
+</div>

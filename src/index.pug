@@ -1,0 +1,139 @@
+-var pageTitle = 'Prime'
+
+doctype html
+html(lang="en")
+  head
+    title PRIME
+    style
+      include styles/style.css 
+
+    //- <script type="text/javascript" src="./scripts/jquery-3.6.0.min.js"></script>
+    //- <script type="text/javascript" src="./scripts/main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  body
+    include modules/gallery
+    include modules/header
+
+    
+    .container
+      .subjects 
+        .subjects_switch
+          a(id="Autoswitch" onClick = "Active('#auto', '#yacht', '#Autoswitch', '#Yachtswitch')") Автомобили
+          a(id="Yachtswitch" onClick = "Active('#yacht', '#auto', '#Yachtswitch', '#Autoswitch')") Яхты
+        #auto
+          .subjects_filter 
+            a(data-f="all") Все марки
+            a(data-f="ferrari") Ferrari
+            a(data-f="jaguar") Jaguar 
+            a(data-f="lamborgini") Lamborgini
+            a(data-f="porsche") Porsche
+          .subjects-cards 
+            div(id="./cards/ferrari/f8tributo.html" name="sale").subjects-cards-item.ferrari
+              img(src="./images/cards/ferrari/f8tributo/mini.webp")
+              .subjects-cards-item_info 
+                p Ferrari F8 Tributo
+                span 340 км/ч
+                br
+                span от 5500 ₽
+            div(id="./cards/porsche/taycan.html").subjects-cards-item.porsche
+              img(src="./images/cards/porsche/taycan/mini.webp")
+              .subjects-cards-item_info 
+                p Porsche Taycan
+                span 240 км/ч
+                br
+                span от 4500 ₽
+          
+            div(id="./cards/lamborgini/aventador.html").subjects-cards-item.lamborgini
+              img(src="./images/cards/lamborgini/aventador/mini.webp")
+              .subjects-cards-item_info 
+                p Lamborghini Aventador
+                span 250 км/ч
+                br
+                span от 3500 ₽
+            div(id="./cards/jaguar/xj.html").subjects-cards-item.jaguar
+              img(src="./images/cards/jaguar/xj/mini.webp")
+              .subjects-cards-item_info 
+                p Jaguar XJ
+                span 250 км/ч
+                br
+                span от 3500 ₽
+    
+        #yacht
+          .subjects_filter 
+            a(data-f="all") Все марки
+            a(data-f="sunseeker") Sunseeker
+          .subjects-cards 
+            div(id="./cards/sunseeker/95yacht.html" name="saleyacht").subjects-cards-item.sunseeker
+              img(src="./images/cards/sunseeker/95yacht/mini.webp")
+              .subjects-cards-item_info 
+                p Sunseeker 95 Yacht
+                span 1950 л.с.
+                br
+                span от 120 тыс. ₽
+            div(id="./cards/sunseeker/70manhattan.html").subjects-cards-item.sunseeker
+              img(src="./images/cards/sunseeker/70manhattan/mini.webp")
+              .subjects-cards-item_info 
+                p Sunseeker 70 Manhattan
+                span 1440 л.с.
+                br
+                span от 90 тыс. ₽
+    
+    #loadcontent
+    
+    //-здесь начинается попап
+    .popup 
+        .popup_container
+            .popup_container-body
+              p Ваш выбор
+              p.reserv Что-то
+              .popup_container-body_start
+                span Данные для связи
+                form(action="")
+                  .group
+                    span.bar
+                    input(type="text" required)
+                    label Имя
+                  .group
+                    span.bar
+                    input(type="text" required)
+                    label Телефон
+                  p(id="but")
+                    a(id="next_popup").button Хочу детали
+              .popup_container-body_end 
+                img(src="./images/manager.webp") 
+                p С вами свяжется <span>Евгения</span>
+                <hr>
+                p В течение часа наш оператор свяжется с вами для уточнения деталей. Спасибо, что выбрали PRIME.
+              div(onClick="close_popup()").popup_container-body_close 
+                img(src="./images/icons/black/close.webp") 
+
+    .ad 
+      img.ban_bg(src="./images/emot.webp")   
+      img.mobban_bg(src="./images/mobemot.webp") 
+      .ad-phrase
+        h1.ad-phrase_title “Эмоции, обычно, через какое-то время проходят. Но то, что они сделали — остается.”
+        p Вильгельм Швебель
+        p.ad-phrase_base Многие клиенты PRIME живут каждым моментом своей жизни. Наш сервис помогает сделать ярче даже самые серые будни. Сотрудники всегда с вами на связи, чтобы избежать любых проблем. Почувствуйте вкус жизни с PRIME.
+    
+    .weare 
+      h1.weare_title Ваша безопасность для нас превыше всего
+    .weare   
+      .weare_items 
+        img(src="./images/garage.webp")
+        p Большой <b>выбор</b> спорткаров
+      .weare_items 
+        img(src="./images/stars.webp")
+        p Три <b>уровня обслуживания </b>       
+    .weare
+      .weare_items 
+        img(src="./images/sale.webp")
+        p <b>Скидки и акции</b> постояльцам
+      .weare_items 
+        img(src="./images/opinion.webp")
+        p <b>1000+</b> довольных клиентов
+
+    include modules/footer      
+    
+    <script type="text/javascript" src="./scripts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>

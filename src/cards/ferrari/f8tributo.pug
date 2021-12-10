@@ -1,0 +1,68 @@
+.card 
+    .card_head 
+        a(onClick="back()").card_head-ss
+            img(src="./images/icons/black/arrow.webp") 
+        .card_head-name
+            span Ferrari F8 Tributo
+    .card_gallery 
+        <div class="glide" id="f8t">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides" id="autogall">
+                <div class="glide__slide">
+                    img(src="./images/cards/ferrari/f8tributo/img1.webp")
+                </div>
+                <div class="glide__slide">
+                    img(src="./images/cards/ferrari/f8tributo/img2.webp")
+                </div>
+                <div class="glide__slide">
+                    img(src="./images/cards/ferrari/f8tributo/img3.webp")
+                </div>
+                <div class="glide__slide">
+                    img(src="./images/cards/ferrari/f8tributo/img4.webp")
+                </div>
+                <div class="glide__slide">
+                    img(src="./images/cards/ferrari/f8tributo/img5.webp")
+                </div>
+                <div class="glide__slide">
+                    img(src="./images/cards/ferrari/f8tributo/img6.webp")
+                </div>
+                <div class="glide__slide">
+                    img(src="./images/cards/ferrari/f8tributo/img7.webp")
+                </div>
+                </div>
+            </div>
+        </div> 
+    
+    .card_switch
+        img(src="./images/icons/black/sale.webp") 
+        span октябрьский бонус: 
+        <b>Ferrari F8 Turbo на 8 дней по цене 4</b>
+        a(id="sw1" onClick = "sw1Active()") Показатели
+        a(id="sw2" onClick = "sw2Active()") Тарифы
+    .card_info 
+        .card_info-text 
+            p Ferrari F8 Tributo – cамое мощное и быстрое спортивное купе в истории Ferrari, оснащенное двигателем V8. Приемник модели 488 GTB, новый спорткар получил улучшенную на 10% аэродинамическую эффективность, сниженный вес за счет применения углепластика и других сверхлегких материалов и прирост производительности. Разгон до сотни занимает 2,9 с, ускорение 0–200 км/ч длится 7,8 с, максимальная скорость — 340 км/ч.
+        a.button(id="mobbut" onClick="open_popup()") Прокатиться
+        .card_info-attributes
+            p
+                img.card_info-attributes_img(src="./images/icons/black/speed.webp") 
+                span.banner-info_speed 340 км/ч
+            p
+                img.card_info-attributes_img(src="./images/icons/black/power.webp") 
+                span.banner-info_power 720 л.с.
+            p
+                img.card_info-attributes_img(src="./images/icons/black/time.webp") 
+                span.banner-info_time 2.9 с.
+        .card_info-price 
+            p 
+                img.card_info-price_img(src="./images/icons/black/1h.webp") 
+                span.banner-info_power 5500 ₽ 
+            p 
+                img.card_info-price_img(src="./images/icons/black/24h.webp") 
+                span.banner-info_power 125 тыс. ₽ 
+    a.button(id="descbut" onClick="open_popup()") Прокатиться
+
+    //-здесь начинается попап
+
+    <script src="../node_modules/@glidejs/glide/dist/glide.js"></script>
+    <script> var ft = { type: "carousel", focusAt: 'center', gap: 0, autoplay: 2000, hoverpause: false, perView: 1.5}; new Glide('#f8t',ft).mount(); delete ft;</script>

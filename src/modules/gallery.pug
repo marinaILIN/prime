@@ -1,0 +1,52 @@
+<div class="glide" id="ban">
+    <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+                <div class="glide__slide" style="margin-right: 0px">
+                    
+                    .promo
+                        img.ban_bg(src="images/baner1.webp")
+                        img.mobban_bg(src="images/mobbaner1.webp")
+                        .banner 
+                            h1.banner_title Ferrari F8 Turbo на 8 дней по цене 4
+                            p.banner_text Арендуйте Ferrari F8 Turbo и почувствуйте всю мощь итальянского спорткара
+                            .banner-info 
+                                p
+                                    img.banner-info_img(src="images/icons/white/speed.webp") 
+                                    span.banner-info_speed 340 км/ч
+                                p
+                                    img.banner-info_img(src="images/icons/white/power.webp") 
+                                    span.banner-info_power 720 л.с.
+                                p
+                                    img.banner-info_img(src="images/icons/white/time.webp") 
+                                    span.banner-info_time 2.9 с.
+                            a.button(id="sale") Прокатиться 
+                </div>
+                <div class="glide__slide"  style="margin-right: 0px">
+                    .promo    
+                        img.ban_bg(src="images/baner2.webp")
+                        img.mobban_bg(src="images/mobbaner2.webp")
+                        .banner 
+                            h1.banner_title Sunseeker 95 Yacht на 9 дней по цене 5
+                            p.banner_text Арендуйте Sunseeker 95 Yacht и освежите свои мысли морским воздухом
+                            .banner-info 
+                                p
+                                    img.banner-info_img(src="images/icons/white/people.webp") 
+                                    span.banner-info_speed 10 чел.
+                                p
+                                    img.banner-info_img(src="images/icons/white/line.webp") 
+                                    span.banner-info_power  28 м
+                                p
+                                    img.banner-info_img(src="images/icons/white/bed.webp") 
+                                    span.banner-info_time 8 мест
+                            a.button(id="saleyacht") Прокатиться 
+                </div>
+            </div>
+    </div>
+
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+    </div>
+    <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script> const confi = { gap: 0, autoplay: 5000, hoverpause: false, perView: 1}; new Glide('#ban',confi).mount();</script>
+</div>
