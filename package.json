@@ -9,8 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@capacitor/android": "^3.3.3",
+    "@capacitor/core": "^3.3.3",
     "@glidejs/glide": "^3.5.1",
     "pug": "^3.0.2"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@capacitor/cli": "^3.3.3"
+  }
 }
