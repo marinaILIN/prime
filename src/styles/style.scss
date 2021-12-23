@@ -4,10 +4,10 @@
 }
 
 // Required Core Stylesheet
-@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 // Optional Theme Stylesheet
-@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 body {
     background: url(images/foncircles.webp) top left repeat;
@@ -39,7 +39,7 @@ a {
     border-radius: 5px;
     outline: none;
     margin-top: 10%;
-    padding: 10px;
+    padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
     letter-spacing: 1pt;
@@ -242,9 +242,8 @@ a {
     margin-top: 5%;
     font-size: 1vw;
     .button{
-        margin-left: 71%;
-        padding-left: 2%;
-        padding-right: 2%;
+        margin-left: 72%;
+        padding: 1% 2% 1% 2%;
         letter-spacing: normal;
         font-size: 1vw;
     }
@@ -644,8 +643,7 @@ a {
         .button{
             margin-top: 0%;
             margin-left: 24%;
-            padding-left: 10%;
-            padding-right: 10%;
+            padding: 3% 10%;
             font-size: 15px;
         }
         &_switch {
@@ -728,10 +726,15 @@ a {
         
         &_container {
             &-body {
-                left: 4%;
-                height: 122vw;
-                width: 86%;
+                left: 0%;
+                height: 95.5%;
+                width: 93.6%;
                 font-size: 18px;
+                border-radius: 0;
+
+                #otstup {
+                    margin-top: 30%;
+                }
 
                 span {
                     font-size: 15px;
