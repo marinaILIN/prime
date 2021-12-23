@@ -1,6 +1,6 @@
 {
 	"appId": "com.marinaILIN.prime",
-	"appName": "prime",
+	"appName": "prime-v1",
 	"webDir": "./src",
 	"bundledWebRuntime": false
 }
