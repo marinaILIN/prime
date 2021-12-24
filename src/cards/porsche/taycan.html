@@ -1,6 +1,6 @@
 
 <div class="card"> 
-  <div class="card_head"> <a class="card_head-ss" onClick="back()"><img src="./images/icons/black/arrow.webp"/></a>
+  <div class="card_head"> <a class="card_head-ss" onClick="back()"><img src="./images/icons/black/arrow.svg"/></a>
     <div class="card_head-name"><span>Porsche Taycan</span></div>
   </div>
   <div class="card_gallery">
@@ -24,13 +24,15 @@
       <p>Дебют полностью электрического Porsche Taycan прошел в начале сентября 2019 года. Новинка получила разработанную нуля платформу с низким центром тяжести и продвинутой подвеской, инновационную силовую установку с уникальными параметрами, ощутимо ускоряющими процесс зарядки, а также необычный салон. Разгон до сотни занимает 2,8 с, максимальная скорость — 260 км/ч.</p>
     </div><a class="button" id="mobbut" onClick="open_popup()">Прокатиться</a>
     <div class="card_info-attributes">
-      <p><img class="card_info-attributes_img" src="images/icons/black/speed.webp"/><span class="banner-info_speed">260 км/ч</span></p>
-      <p><img class="card_info-attributes_img" src="images/icons/black/power.webp"/><span class="banner-info_power">625 л.с.</span></p>
-      <p><img class="card_info-attributes_img" src="images/icons/black/time.webp"/><span class="banner-info_time">2.8 с.</span></p>
+      <div class="card_info-attributes_base">
+        <p><img class="card_info-attributes_img" src="images/icons/black/speed.svg"/><span class="banner-info_speed">260 км/ч</span></p>
+        <p><img class="card_info-attributes_img" src="images/icons/black/power.svg"/><span class="banner-info_power">625 л.с.</span></p>
+        <p><img class="card_info-attributes_img" src="images/icons/black/time.svg"/><span class="banner-info_time">2.8 с.</span></p>
+      </div>
     </div>
     <div class="card_info-price"> 
-      <p> <img class="card_info-price_img" src="images/icons/black/1h.webp"/><span class="banner-info_power">4500 ₽ </span></p>
-      <p> <img class="card_info-price_img" src="images/icons/black/24h.webp"/><span class="banner-info_power">105 тыс. ₽   </span></p>
+      <p> <img class="card_info-price_img" src="images/icons/black/1h.svg"/><span class="banner-info_power">4500 ₽ </span></p>
+      <p> <img class="card_info-price_img" src="images/icons/black/24h.svg"/><span class="banner-info_power">105 тыс. ₽   </span></p>
     </div>
   </div><a class="button" id="descbut" onClick="open_popup()">Прокатиться</a><script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 <script> var tay = { type: "carousel", focusAt: 'center', gap: 0, autoplay: 2000, hoverpause: false, perView: 1.5}; new Glide('#tay',tay).mount();</script>

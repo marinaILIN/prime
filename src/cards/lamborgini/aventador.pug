@@ -1,7 +1,7 @@
 .card 
     .card_head 
         a(onClick="back()").card_head-ss
-            img(src="./images/icons/black/arrow.webp") 
+            img(src="./images/icons/black/arrow.svg") 
         .card_head-name
             span Lamborghini Aventador
     .card_gallery 
@@ -33,21 +33,22 @@
             p Aventador S — роскошный инновационный суперкар. Внутренняя отделка, выполненная из материалов высочайшего качества, доступна в бесконечном многообразии вариантов. Элегантность интерьера сочетается с современными технологическими решениями, такими как приборная панель с интерактивным ЖК-дисплеем TFT с усовершенствованной графикой и специальная светодиодная подсветка. Разгон до сотни занимает 2,9 с, максимальная скорость — 350 км/ч.
         a.button(id="mobbut" onClick="open_popup()") Прокатиться
         .card_info-attributes
-            p
-                img.card_info-attributes_img(src="images/icons/black/speed.webp")  
-                span.banner-info_speed 350 км/ч
-            p
-                img.card_info-attributes_img(src="images/icons/black/power.webp")   
-                span.banner-info_power 740 л.с.
-            p
-                img.card_info-attributes_img(src="images/icons/black/time.webp") 
-                span.banner-info_time 2.9 с.
+            .card_info-attributes_base
+                p
+                    img.card_info-attributes_img(src="images/icons/black/speed.svg")  
+                    span.banner-info_speed 350 км/ч
+                p
+                    img.card_info-attributes_img(src="images/icons/black/power.svg")   
+                    span.banner-info_power 740 л.с.
+                p
+                    img.card_info-attributes_img(src="images/icons/black/time.svg") 
+                    span.banner-info_time 2.9 с.
         .card_info-price 
             p 
-                img.card_info-price_img(src="images/icons/black/1h.webp")
+                img.card_info-price_img(src="images/icons/black/1h.svg")
                 span.banner-info_power 3500 ₽ 
             p 
-                img.card_info-price_img(src="images/icons/black/24h.webp") 
+                img.card_info-price_img(src="images/icons/black/24h.svg") 
                 span.banner-info_power 80 тыс. ₽   
     a.button(id="descbut" onClick="open_popup()") Прокатиться
 

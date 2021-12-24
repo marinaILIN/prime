@@ -1,7 +1,7 @@
 .card 
     .card_head 
         a(onClick="back()").card_head-ss
-            img(src="./images/icons/black/arrow.webp") 
+            img(src="./images/icons/black/arrow.svg") 
         .card_head-name
             span Jaguar XJ
     .card_gallery 
@@ -29,21 +29,22 @@
             p XJ со стандартной колесной базой (SWB) необычайно универсален и способен превзойти запросы самого взыскательного владельца. Представительская версия с удлиненной базой (LWB) воплощает эталонный уровень изысканной роскоши. К услугам пассажиров второго ряда более метра пространства для ног и уникальные настройки пневмоподвески «лимузин» для непревзойденного комфорта. Разгон до сотни занимает 6.4 с, максимальная скорость — 250 км/ч.
         a.button(id="mobbut" onClick="open_popup()") Прокатиться
         .card_info-attributes
-            p
-                img.card_info-attributes_img(src="images/icons/black/speed.webp") 
-                span.banner-info_speed 250 км/ч
-            p
-                img.card_info-attributes_img(src="images/icons/black/power.webp")  
-                span.banner-info_power 340 л.с.
-            p
-                img.card_info-attributes_img(src="images/icons/black/time.webp") 
-                span.banner-info_time 6.4 с.
+            .card_info-attributes_base
+                p
+                    img.card_info-attributes_img(src="images/icons/black/speed.svg") 
+                    span.banner-info_speed 250 км/ч
+                p
+                    img.card_info-attributes_img(src="images/icons/black/power.svg")  
+                    span.banner-info_power 340 л.с.
+                p
+                    img.card_info-attributes_img(src="images/icons/black/time.svg") 
+                    span.banner-info_time 6.4 с.
         .card_info-price 
             p 
-                img.card_info-price_img(src="images/icons/black/1h.webp")
+                img.card_info-price_img(src="images/icons/black/1h.svg")
                 span.banner-info_power 3500 ₽ 
             p 
-                img.card_info-price_img(src="images/icons/black/24h.webp") 
+                img.card_info-price_img(src="images/icons/black/24h.svg") 
                 span.banner-info_power 75 тыс. ₽   
     a.button(id="descbut" onClick="open_popup()") Прокатиться
 

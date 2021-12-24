@@ -1,7 +1,7 @@
 .card 
     .card_head 
         a(onClick="back()").card_head-ss
-            img(src="./images/icons/black/arrow.webp") 
+            img(src="./images/icons/black/arrow.svg") 
         .card_head-name
             span Porsche Taycan
     .card_gallery 
@@ -42,21 +42,22 @@
             p Дебют полностью электрического Porsche Taycan прошел в начале сентября 2019 года. Новинка получила разработанную нуля платформу с низким центром тяжести и продвинутой подвеской, инновационную силовую установку с уникальными параметрами, ощутимо ускоряющими процесс зарядки, а также необычный салон. Разгон до сотни занимает 2,8 с, максимальная скорость — 260 км/ч.
         a.button(id="mobbut" onClick="open_popup()") Прокатиться
         .card_info-attributes
-            p
-                img.card_info-attributes_img(src="images/icons/black/speed.webp") 
-                span.banner-info_speed 260 км/ч
-            p
-                img.card_info-attributes_img(src="images/icons/black/power.webp")  
-                span.banner-info_power 625 л.с.
-            p
-                img.card_info-attributes_img(src="images/icons/black/time.webp") 
-                span.banner-info_time 2.8 с.
+            .card_info-attributes_base
+                p
+                    img.card_info-attributes_img(src="images/icons/black/speed.svg") 
+                    span.banner-info_speed 260 км/ч
+                p
+                    img.card_info-attributes_img(src="images/icons/black/power.svg")  
+                    span.banner-info_power 625 л.с.
+                p
+                    img.card_info-attributes_img(src="images/icons/black/time.svg") 
+                    span.banner-info_time 2.8 с.
         .card_info-price 
             p 
-                img.card_info-price_img(src="images/icons/black/1h.webp")
+                img.card_info-price_img(src="images/icons/black/1h.svg")
                 span.banner-info_power 4500 ₽ 
             p 
-                img.card_info-price_img(src="images/icons/black/24h.webp") 
+                img.card_info-price_img(src="images/icons/black/24h.svg") 
                 span.banner-info_power 105 тыс. ₽   
     a.button(id="descbut" onClick="open_popup()") Прокатиться
 

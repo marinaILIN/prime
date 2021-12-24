@@ -255,6 +255,7 @@ a {
         margin-right: 18%;
         justify-content: space-between;
         b { padding-right: 30%;}
+        img {width: 2%;}
         #Tab {padding-right: 83%;}
         #sw1 {
             opacity: 1; 
@@ -272,7 +273,7 @@ a {
         &-ss {
             margin-right: 35%;
             width: 10%;
-            img {width: 85%; height: auto;}
+            img {width: 45%; height: auto;}
         }
         &-name {
             text-align: center;
@@ -648,7 +649,7 @@ a {
         }
         &_switch {
             margin-bottom: 5%;
-            img { width: 10%;
+            img { width: 7%;
                 display: inline-block;
                 vertical-align: middle;}
             margin-left: 10%;
@@ -689,20 +690,27 @@ a {
             span { margin-left: 5%;}
             &-attributes {
                 width: 100%;
+                margin-top: 5%;
                 display: inline-flex;
+                flex-wrap: wrap;
                 justify-content: space-around;
                 text-align: center;
                 font-size: 15px;
-                flex-wrap: wrap;
                 p {margin: 0%;}
                 &_img {
                     display: inline-block;
                     vertical-align: middle;
-                    width: auto;
-                    height: 40%;
+                    width: 8%;
                 }
                 &_mini {
-                    img {width: 16%;}
+                    img {width: 8%;}
+                }
+                &_base {
+                    img {width: 25%;}
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
                 }
             }
             &-price {
@@ -715,8 +723,6 @@ a {
                 &_img {
                     display: inline-block;
                     vertical-align: middle;
-                    width: auto;
-                    height: 40%;
                 }
             }
         }

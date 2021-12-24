@@ -528,6 +528,10 @@ a:hover {
   padding-right: 30%;
 }
 
+.card_switch img {
+  width: 2%;
+}
+
 .card_switch #Tab {
   padding-right: 83%;
 }
@@ -568,7 +572,7 @@ a:hover {
 }
 
 .card_head-ss img {
-  width: 85%;
+  width: 45%;
   height: auto;
 }
 
@@ -1009,7 +1013,7 @@ a:hover {
         justify-content: space-around;
   }
   .card_switch img {
-    width: 10%;
+    width: 7%;
     display: inline-block;
     vertical-align: middle;
   }
@@ -1069,15 +1073,16 @@ a:hover {
   }
   .card_info-attributes {
     width: 100%;
+    margin-top: 5%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     text-align: center;
     font-size: 15px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .card_info-attributes p {
     margin: 0%;
@@ -1085,11 +1090,22 @@ a:hover {
   .card_info-attributes_img {
     display: inline-block;
     vertical-align: middle;
-    width: auto;
-    height: 40%;
+    width: 8%;
   }
   .card_info-attributes_mini img {
-    width: 16%;
+    width: 8%;
+  }
+  .card_info-attributes_base {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .card_info-attributes_base img {
+    width: 25%;
   }
   .card_info-price {
     display: -webkit-inline-box;
@@ -1107,8 +1123,6 @@ a:hover {
   .card_info-price_img {
     display: inline-block;
     vertical-align: middle;
-    width: auto;
-    height: 40%;
   }
   .popup_container-body {
     left: 0%;
