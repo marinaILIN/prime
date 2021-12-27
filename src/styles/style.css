@@ -794,8 +794,8 @@ a:hover {
 }
 
 @media only screen and (max-width: 415px) {
-  .body {
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left) !important;
+  .header .card .container {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
   .mobban_bg {
     display: inline;
