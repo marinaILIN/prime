@@ -798,6 +798,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 415px) {
+  .header .card .container {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
   .mobban_bg {
     display: inline;
   }
@@ -1098,6 +1101,7 @@ a:hover {
   }
   .card_info-attributes_mini img {
     width: 8%;
+    min-width: 30px;
   }
   .card_info-attributes_base {
     display: -webkit-box;
@@ -1163,7 +1167,7 @@ a:hover {
 }
 /*# sourceMappingURL=style.css.map */
     </style><meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name='viewport' content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   </head>
   <body><div class="glide" id="ban">
 <div class="glide__track" data-glide-el="track">

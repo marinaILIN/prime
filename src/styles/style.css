@@ -794,6 +794,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 415px) {
+  .header .card .container {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
   .mobban_bg {
     display: inline;
   }
@@ -1094,6 +1097,7 @@ a:hover {
   }
   .card_info-attributes_mini img {
     width: 8%;
+    min-width: 30px;
   }
   .card_info-attributes_base {
     display: -webkit-box;

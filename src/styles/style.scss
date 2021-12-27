@@ -450,7 +450,9 @@ a {
 }
 
 @media only screen and (max-width: 415px) {
-    //body { background-color: rgb(158, 158, 226);}
+    .header .card .container {
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
 
     .mobban_bg {
         display: inline;
@@ -703,7 +705,7 @@ a {
                     width: 8%;
                 }
                 &_mini {
-                    img {width: 8%;}
+                    img {width: 8%; min-width: 30px;}
                 }
                 &_base {
                     img {width: 25%;}
