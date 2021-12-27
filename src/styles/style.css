@@ -1097,6 +1097,7 @@ a:hover {
   }
   .card_info-attributes_mini img {
     width: 8%;
+    min-width: 30px;
   }
   .card_info-attributes_base {
     display: -webkit-box;
