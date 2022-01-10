@@ -1,24 +1,20 @@
 {
   "name": "prime-v1",
+  "description": "",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "@capacitor/android": "^3.3.4",
-    "@capacitor/core": "^3.3.4",
-    "@capacitor/ios": "^3.3.4",
-    "@glidejs/glide": "^3.5.2",
-    "bundletool": "^1.1.5",
-    "pug": "^3.0.2"
+    "@capacitor/android": "3.3.4",
+    "@capacitor/core": "3.3.4",
+    "@capacitor/ios": "3.3.4",
+    "@glidejs/glide": "3.5.2",
+    "bundletool": "1.1.5",
+    "pug": "3.0.2"
   },
-  "description": "",
   "devDependencies": {
-    "@capacitor/cli": "^3.3.4",
-    "cordova-plugin-safearea": "^1.0.0"
+    "@capacitor/cli": "3.3.4",
+    "cordova-plugin-safearea": "1.0.0"
   }
 }
